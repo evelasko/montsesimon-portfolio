@@ -36,7 +36,7 @@ const director = () => {
                         alt={"Apple iPhone face down"}
                     />
                 </SimpleBanner>
-                <Features category="director"/>
+                <Features category="Proyecto"/>
             </Layout>
         </>
     )

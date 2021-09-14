@@ -1,12 +1,12 @@
 if (process.env.NODE_ENV == "development") require("dotenv").config()
 module.exports = {
     siteMetadata: {
-        title: "Rey Montesinos",
+        title: "Montse Simon",
         description: "Portafolio de interpretación teatral, dirección escénica e investigación dramática",
         author: "Misfitcoders",
         twitterUsername: "@hnpotter",
         image: "/yellow-metal-design-decoration.jpg",
-        siteUrl: "https://reymontesinos.com",
+        siteUrl: "https://montsesimon.com",
     },
     /* Your site config here */
     plugins: [
@@ -37,8 +37,8 @@ module.exports = {
         {
             resolve: "gatsby-plugin-robots-txt",
             options: {
-                host: "https://reymontesinos.com",
-                sitemap: "https://reymontesinos.com/sitemap.xml",
+                host: "https://montsesimon.com",
+                sitemap: "https://montsesimon.com/sitemap.xml",
                 policy: [{ userAgent: "*", allow: "/" }],
             },
         },

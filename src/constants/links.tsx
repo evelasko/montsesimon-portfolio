@@ -16,17 +16,21 @@ export const menuItems = [
         text: "bio",
     },
     {
-        path: "/actor",
-        text: "actor",
+        path: "/actriz",
+        text: "actríz",
     },
     {
-        path: "/director",
-        text: "director",
+        path: "/proyectos",
+        text: "proyectos"
     },
     {
-        path: "/blog",
-        text: "investigación"
+        path: "/creacion",
+        text: "creación",
     },
+    // {
+    //     path: "/blog",
+    //     text: "investigación"
+    // },
     {
         path: "/contacto",
         text: "contacto",

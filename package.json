@@ -1,7 +1,7 @@
 {
-  "name": "reymontesinos-portfolio",
+  "name": "montsesimon-portfolio",
   "private": true,
-  "description": "Portafolio de trabajos e investigaciones de Rey Montesinos",
+  "description": "Portafolio de trabajos e investigaciones de Montse Simón",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -62,6 +62,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/misfitcoders/reymontesinos-portfolio"
+    "url": "https://github.com/misfitcoders/montsesimon-portfolio"
   }
 }

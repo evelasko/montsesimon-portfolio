@@ -27,24 +27,33 @@ const getTrabajos = graphql`
 
 const Features = () => {
     const response = useStaticQuery(getTrabajos)
-    const directorFeatures = response.trabajos.edges.filter(({node}) => node.category == "director")
-    const actorFeatures = response.trabajos.edges.filter(({node}) => node.category == "actor")
+    const directorFeatures = response.trabajos.edges.filter(({node}) => node.category == "Creacion")
+    const actorFeatures = response.trabajos.edges.filter(({node}) => node.category == "Actriz")
+    const proyectoFeatures = response.trabajos.edges.filter(({node}) => node.category == "Proyecto")
 
     return (
         <ProductsStyles>
             <div className="features__container">
-                <h2>Actor</h2>
+                <h2>Actriz</h2>
                 <div className="features__container--scroll">
                     {actorFeatures.map(({ node }) => {
-                        return <Product feature={node} category="actor"/>
+                        return <Product feature={node} category="Actriz"/>
                     })}
                 </div>
             </div>
             <div className="features__container">
-                <h2>Director</h2>
+                <h2>Proyectos</h2>
+                <div className="features__container--scroll">
+                    {actorFeatures.map(({ node }) => {
+                        return <Product feature={node} category="Proyecto"/>
+                    })}
+                </div>
+            </div>
+            <div className="features__container">
+                <h2>Creación</h2>
                 <div className="features__container--scroll">
                     {directorFeatures.map(({ node }) => {
-                        return <Product feature={node} category="director"/>
+                        return <Product feature={node} category="Creacion"/>
                     })}
                 </div>
             </div>
