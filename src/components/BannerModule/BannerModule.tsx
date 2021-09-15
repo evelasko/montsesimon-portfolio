@@ -20,7 +20,7 @@ const BannerModule = ({ children, title, subTitle, price, enquire, }: InferProps
                     <StaticImage
                         className="banner__image"
                         imgClassName="banner__image--content"
-                        src="../../images/macbook-color.jpg"
+                        src="../../images/main_face.jpg"
                         alt="Banner Image"
                         layout="fullWidth"
                         placeholder="blurred"

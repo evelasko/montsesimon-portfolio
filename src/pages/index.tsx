@@ -8,6 +8,8 @@ import PerksModule from "../components/PerksModule/PerksModule"
 import Features from "../components/Features/Features"
 import { useStaticQuery, graphql } from "gatsby"
 import LazyShow from "../components/LazyShow/LazyShow"
+import { StaticImage } from "gatsby-plugin-image"
+import { Parallax } from "react-scroll-parallax"
 
 const getPortada = graphql`
     query {
@@ -36,6 +38,7 @@ const Index = () => {
                 <LazyShow>
                     <BasicTextModule />
                 </LazyShow>
+                {/* <Parallax y={[-20, 30]} > <StaticImage src="../images/macbook-dark.jpg" alt="MB Dark" /> </Parallax> */}
                 <PerksModule />
                     {/* <Perk title="The Title" content="The content" /> */}
                 {/* </PerksModule> */}

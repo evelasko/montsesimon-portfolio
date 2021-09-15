@@ -5,8 +5,14 @@ import AnimMain from "./AnimMain/AnimMain"
 import Footer from "./Footer/Footer"
 import "@fontsource/heebo"
 import { motion } from "framer-motion"
+import { ParallaxProvider } from "react-scroll-parallax"
 
 const GlobalStyle = createGlobalStyle`
+@font-face {
+  font-family: 'Branch';
+  src: local('Branch'), url('../fonts/Branch-Regular.woff') format('woff');
+}
+
 :root {
   --background: #000;
   --primary: #ffc400;
@@ -90,6 +96,7 @@ h2 {
 }
 
 h1 {
+
   margin-bottom: 1rem;
   font-size: var(--h1);
   font-weight: 900;
@@ -175,24 +182,30 @@ button.btn {
   .section-padding--large {
     padding: var(--paddingLarge) var(--paddingBorder);
   }
+
+  .portada-parallax {
+    height: 200px!important;
+  }
 `
 
 const Layout = ({ children }) => {
     return (
         <>
-            <GlobalStyle />
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.75 }}
-            >
-                <NavModule />
-                <AnimMain>
-                    {children}
-                    <Footer />
-                </AnimMain>
-            </motion.div>
+            <ParallaxProvider>
+              <GlobalStyle />
+              <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.75 }}
+              >
+                  <NavModule />
+                  <AnimMain>
+                      {children}
+                      <Footer />
+                  </AnimMain>
+              </motion.div>
+            </ParallaxProvider>
         </>
     )
 }

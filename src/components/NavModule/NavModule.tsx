@@ -11,6 +11,7 @@ import {
     menuList,
 } from "./NavAnim"
 import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
+import { StaticImage } from "gatsby-plugin-image"
 
 const NavModule = () => {
     const [isOpen, setNav] = useContext(MenuContext)
@@ -48,7 +49,14 @@ const NavModule = () => {
 
                     {title && (
                         <div className="logo">
-                            <Link to="/">{title}<span>.</span></Link>
+                            <Link to="/">
+                                {/* {title}<span>.</span> */}
+                                <StaticImage
+                                    src="../../images/logos/signature.svg"
+                                    alt="Montse Simon's signature"
+                                    height={100}
+                                />
+                                </Link>
                         </div>
                     )}
                 </div>

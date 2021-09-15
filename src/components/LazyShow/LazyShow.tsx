@@ -12,6 +12,7 @@ const LazyShowStyles = styled.section`
     margin: 20px;
     padding: 20px;
     font-size: 1.5em;
+    background: black!important;
 }
 `
 

@@ -31,8 +31,10 @@ const BasicTextModule = () => {
                 <p style={{ marginBottom: "60px" }}>
                     { portada.subtituloPresentacion.internal.content }
                 </p>
-                <Button text="Actor" as={Link} to="/actor" />
-                <Button text="Director" as={Link} to="/director" />
+                <Button text="Actríz" as={Link} to="/actriz" />
+                <Button text="Proyectos" as={Link} to="/proyectos" />
+                <Button text="Creaciones" as={Link} to="/creacion" />
+                <Button text="Más sobre mí" as={Link} to="/bio" />
             </div>
         </BasicTextModuleStyles>
     )

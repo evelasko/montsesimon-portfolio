@@ -6,7 +6,7 @@ const Button = ({ text, to, as }) => {
     return (
         <ButtonStyles as={as} to={to}>
             {text}
-            <Arrow style={{ marginLeft: "10px" }} />
+            <Arrow style={{ marginLeft: "10px", marginRight: "10px" }} />
         </ButtonStyles>
     )
 }

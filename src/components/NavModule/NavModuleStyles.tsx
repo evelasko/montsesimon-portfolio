@@ -49,6 +49,7 @@ export const NavModuleStyles = styled.nav`
         font-weight: 700;
         font-size: 20px;
         letter-spacing: -0.5px;
+        height: 100px;
 
         a {
             color: #fff;

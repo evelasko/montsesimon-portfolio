@@ -34,7 +34,7 @@ const Features = () => {
     return (
         <ProductsStyles>
             <div className="features__container">
-                <h2>Actriz</h2>
+                <h2>Interpretaciones Recientes</h2>
                 <div className="features__container--scroll">
                     {actorFeatures.map(({ node }) => {
                         return <Product feature={node} category="Actriz"/>
@@ -42,7 +42,7 @@ const Features = () => {
                 </div>
             </div>
             <div className="features__container">
-                <h2>Proyectos</h2>
+                <h2>Últimos Proyectos</h2>
                 <div className="features__container--scroll">
                     {actorFeatures.map(({ node }) => {
                         return <Product feature={node} category="Proyecto"/>
@@ -50,7 +50,7 @@ const Features = () => {
                 </div>
             </div>
             <div className="features__container">
-                <h2>Creación</h2>
+                <h2>Creaciones</h2>
                 <div className="features__container--scroll">
                     {directorFeatures.map(({ node }) => {
                         return <Product feature={node} category="Creacion"/>
