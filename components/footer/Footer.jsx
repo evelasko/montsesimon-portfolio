@@ -17,6 +17,7 @@ const SocialShare = [
 ];
 
 const Footer = () => {
+  console.log("Rendering Footer Component");
   return (
     <>
       <div className="row align-items-center">

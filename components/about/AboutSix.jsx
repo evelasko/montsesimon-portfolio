@@ -1,38 +1,41 @@
+import { Fragment } from "react";
 import Image from "next/image";
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 //: imagenBio
-const imagenBio = "/img/about/about-6.jpg";
+// const imagenBio = "/img/about/about-6.jpg";
 
 //: tituloBio
-const tituloBio = "Montse Simón Navarro";
+// const tituloBio = "Montse Simón Navarro";
 
 //: subtituloBio
-const subtituloBio = <>A Lead <span className="color-theme">UX &amp; UI</span> designer
-              based in <span className="color-theme">Canada</span></>;
+// const subtituloBio = <>A Lead <span className="color-theme">UX &amp; UI</span> designer
+              // based in <span className="color-theme">Canada</span></>;
 
 //: bio
-const bio = `Soy una persona creativa, apasionada por el diseño y la ilustración. Me encanta crear cosas bonitas y funcionales. Me considero una persona proactiva, con capacidad de trabajo en equipo y con muchas ganas de aprender y mejorar.`;
+// const bio = `Soy una persona creativa, apasionada por el diseño y la ilustración. Me encanta crear cosas bonitas y funcionales. Me considero una persona proactiva, con capacidad de trabajo en equipo y con muchas ganas de aprender y mejorar.`;
 
 //: detallesBio
-const detallesBio = [
-  // {label: "Residencia", value: "España"},
-  {label: "Teléfono", value: "123 456 789"},
-  {label: "Dirección Postal", value: "Calle de la Rosa, 12, 2A"},
-  {label: "Código Postal", value: "08001"},
-  {label: "Ciudad", value: "Barcelona"},
-  {label: "País", value: "España"},
-  {label: "Email", value: "montse@montsesimon.com"},
-  {label: "Freelance", value: "Disponible"},
-]
+// const detallesBio = [
+//   {label: "Residencia", value: "España"},
+//   {label: "Teléfono", value: "123 456 789"},
+//   {label: "Dirección Postal", value: "Calle de la Rosa, 12, 2A"},
+//   {label: "Código Postal", value: "08001"},
+//   {label: "Ciudad", value: "Barcelona"},
+//   {label: "País", value: "España"},
+//   {label: "Email", value: "montse@montsesimon.com"},
+//   {label: "Freelance", value: "Disponible"},
+// ]
 
 //: cv
-const cv = "/img/resume.png";
+// const cv = "/img/resume.png";
 
-const halfIndex = Math.ceil(detallesBio.length / 2);
-const detallesBioCol1 = detallesBio.slice(0, halfIndex);
-const detallesBioCol2 = detallesBio.slice(halfIndex);
+const About = ({imagenBio, tituloBio, subtituloBio, bio, detallesBio, cv}) => {
+  const halfIndex = Math.ceil(detallesBio.length / 2);
+  const detallesBioCol1 = detallesBio.slice(0, halfIndex);
+  const detallesBioCol2 = detallesBio.slice(halfIndex);
+  console.log("Rendering About Component")
 
-const About = () => {
   return (
     <>
       <div className="row align-items-center justify-content-center">
@@ -51,14 +54,19 @@ const About = () => {
         <div className="col-lg-6 my-3">
           <div className="typo-box about-me">
             <h3 className="font-alt">
-              {tituloBio}
+              {typeof tituloBio === "string" ? tituloBio : "Montse Simón Navarro"}
             </h3>
             <h5>
-              {subtituloBio}
+              {(subtituloBio ?? []).map(({value, marks}, index) => {
+                if (marks?.[0]?.type === "bold") {
+                  return (<span key={index} className="color-theme">{value}</span>);
+                }
+                return (<Fragment key={index}>{value}</Fragment>);
+              })}
             </h5>
-            <p>
-              {bio}
-            </p>
+            <div>
+              {documentToReactComponents(bio)}
+            </div>
             <div className="row about-list">
               <div className="col-md-6">
                 {(detallesBioCol1 ?? []).map((item, index) => (

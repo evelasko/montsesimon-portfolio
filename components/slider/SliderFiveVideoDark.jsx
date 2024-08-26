@@ -2,18 +2,19 @@
 import TextTransition, { presets } from "react-text-transition";
 
 //: listaAnimadaFrontal
-const TEXTS = ["Actríz", "Bailarina", "Directora", "Dramaturga", "Investigadora"];
+// const listaAnimadaFrontal = ["Actríz", "Bailarina", "Directora", "Dramaturga", "Investigadora"];
 //: tituloPrincipal
-const TITLE = "Montse Simón";
+// const tituloPrincipal = "Montse Simón";
 //: videoPortada
-const videoPortada = "https://www.ibthemespro.com/resource/krozo/resources/video-2.mp4";
+// const videoPortada = "https://www.ibthemespro.com/resource/krozo/resources/video-2.mp4";
 //: imagenPortada
-const imagenPortada = "/img/banner/bg-2.jpg";
+// const imagenPortada = "/img/banner/bg-2.jpg";
 
 import { useEffect, useState } from "react";
 import Social from "../Social";
 
-const Slider = () => {
+const Slider = ({listaAnimadaFrontal, tituloPrincipal, videoPortada, imagenPortada}) => {
+  console.log("Rendering Slider Component");
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -36,11 +37,11 @@ const Slider = () => {
           <div className="row align-items-center full-screen">
             <div className="col-lg-12">
               <div className="hb-typo text-center">
-                <h1 className="font-alt">{TITLE}</h1>
+                <h1 className="font-alt">{tituloPrincipal ?? "Montse Simón"}</h1>
                 <h2 className="mb-4">
                   <span className="loop-text">
                     <TextTransition springConfig={presets.wobbly}>
-                      {TEXTS[index % TEXTS.length]}
+                      {(listaAnimadaFrontal ?? [])[index % listaAnimadaFrontal.length]}
                     </TextTransition>
                   </span>
                 </h2>

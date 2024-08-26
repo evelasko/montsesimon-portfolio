@@ -5,75 +5,76 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 //: categorias
-const tabList = ["All", "Branding", "Photography", "Fashion", "Product"];
+// const tabList = ["Otros", "Dirección", "Videoclip", "Documental", "Teatro", "Microteatro"];
 
 //: trabajos
-const AllPortfolioContent = [
-  {
-    categories: ["Branding", "Fashion"],
-    img: "/img/portfolio/1.jpg",
-    title: "Motion Graphy",
-    subTitle: "Android App",
-    alterText: "Motion Graphy",
-    portfolioLink:
-      "https://play.google.com/store/apps/details?id=com.alightcreative.motion&hl=en&gl=US",
-  },
-  {
-    categories: ["Photography", "Product"],
-    img: "/img/portfolio/3.jpg",
-    title: "E-Learning App",
-    subTitle: "Nuna ios App",
-    alterText: "Elearning App",
-    portfolioLink:
-      "https://dribbble.com/shots/16529350-Nairo-Personal-Portfolio-React-Template",
-  },
-  {
-    categories: ["Branding", "Fashion"],
-    img: "/img/portfolio/2.jpg",
-    title: "Visual Design",
-    subTitle: "Themeforest Marke",
-    alterText: "Business Mockup",
-    portfolioLink:
-      "https://dribbble.com/shots/16529407-Deski-Saas-Software-React-Template",
-  },
-  {
-    categories: ["Photography", "Product"],
-    img: "/img/portfolio/4.jpg",
-    title: "Business Card",
-    subTitle: "Graphicriver Market",
-    alterText: "E-Cosmetics",
-    portfolioLink:
-      "https://dribbble.com/shots/16545341-Imroz-Vue-JS-Creative-Agency-Portfolio-Template",
-  },
-  {
-    categories: ["Branding", "Fashion"],
-    img: "/img/portfolio/7.jpg",
-    title: "Code Editing",
-    subTitle: "Codecanyon Market",
-    alterText: "Bottle Illustration",
-    portfolioLink:
-      "https://dribbble.com/shots/16529158-Waxon-Personal-Portfolio-VueJS-Template-RTL",
-  },
-  {
-    categories: ["Photography", "Product"],
-    img: "/img/portfolio/6.jpg",
-    title: "Web Application",
-    subTitle: "Behance Shot",
-    alterText: "Web Application",
-    portfolioLink:
-      "https://dribbble.com/shots/16529226-Krozo-Personal-Portfolio-React-Template",
-  },
-];
+// const portfolioContent = [
+//   {
+//     categories: ["Branding", "Fashion"],
+//     img: "/img/portfolio/1.jpg",
+//     title: "Motion Graphy",
+//     subTitle: "Android App",
+//     alterText: "Motion Graphy",
+//     portfolioLink:
+//       "https://play.google.com/store/apps/details?id=com.alightcreative.motion&hl=en&gl=US",
+//   },
+//   {
+//     categories: ["Photography", "Product"],
+//     img: "/img/portfolio/3.jpg",
+//     title: "E-Learning App",
+//     subTitle: "Nuna ios App",
+//     alterText: "Elearning App",
+//     portfolioLink:
+//       "https://dribbble.com/shots/16529350-Nairo-Personal-Portfolio-React-Template",
+//   },
+//   {
+//     categories: ["Branding", "Fashion"],
+//     img: "/img/portfolio/2.jpg",
+//     title: "Visual Design",
+//     subTitle: "Themeforest Marke",
+//     alterText: "Business Mockup",
+//     portfolioLink:
+//       "https://dribbble.com/shots/16529407-Deski-Saas-Software-React-Template",
+//   },
+//   {
+//     categories: ["Photography", "Product"],
+//     img: "/img/portfolio/4.jpg",
+//     title: "Business Card",
+//     subTitle: "Graphicriver Market",
+//     alterText: "E-Cosmetics",
+//     portfolioLink:
+//       "https://dribbble.com/shots/16545341-Imroz-Vue-JS-Creative-Agency-Portfolio-Template",
+//   },
+//   {
+//     categories: ["Branding", "Fashion"],
+//     img: "/img/portfolio/7.jpg",
+//     title: "Code Editing",
+//     subTitle: "Codecanyon Market",
+//     alterText: "Bottle Illustration",
+//     portfolioLink:
+//       "https://dribbble.com/shots/16529158-Waxon-Personal-Portfolio-VueJS-Template-RTL",
+//   },
+//   {
+//     categories: ["Photography", "Product"],
+//     img: "/img/portfolio/6.jpg",
+//     title: "Web Application",
+//     subTitle: "Behance Shot",
+//     alterText: "Web Application",
+//     portfolioLink:
+//       "https://dribbble.com/shots/16529226-Krozo-Personal-Portfolio-React-Template",
+//   },
+// ];
 
-const Portfolio = () => {
+export default function Portfolio ({tabList, portfolioContent}) {
+  console.log("Rendering Portfolio Component");
   const [currentTab, setCurrentTab] = useState(tabList[0]);
-  const [filteredItems, setFilteredItems] = useState(AllPortfolioContent);
+  const [filteredItems, setFilteredItems] = useState(portfolioContent);
   useEffect(() => {
-    if (currentTab == "All") {
-      setFilteredItems(AllPortfolioContent);
+    if (currentTab == "Todo") {
+      setFilteredItems(portfolioContent);
     } else {
       const filtered = [
-        ...AllPortfolioContent.filter((elm) =>
+        ...portfolioContent.filter((elm) =>
           elm.categories.includes(currentTab)
         ),
       ];
@@ -168,5 +169,3 @@ const Portfolio = () => {
     </div>
   );
 };
-
-export default Portfolio;

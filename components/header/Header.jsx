@@ -6,6 +6,7 @@ import Image from "next/image";
 import addScrollspy from "@/utlis/addScrollSpy";
 
 const Header = () => {
+  console.log("Rendering Header Component");
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const [navbar, setNavbar] = useState(false);

@@ -9,32 +9,100 @@ import Testimonial from "@/components/testimonial/Testimonial";
 import Blog from "@/components/blog/Blog";
 import Contact from "@/components/contact/Contact";
 import Footer from "@/components/footer/Footer";
+import { getPortadaData } from "@/lib/api";
 
 export const metadata = {
   title: "Montse Simón || Dossier de Trabajos",
 };
 
 //: tituloTrabajos
-const tituloTrabajos = "Dossier de Trabajos";
+// const tituloTrabajos = "Dossier de Trabajos";
 //: subtituloDeTrabajos
-const subtituloDeTrabajos = "Además de ser actríz y bailarina, he trabajado como directora y dramaturga en diferentes proyectos. A continuación, se presentan algunos de mis trabajos más destacados.";
+// const subtituloDeTrabajos = "Además de ser actríz y bailarina, he trabajado como directora y dramaturga en diferentes proyectos. A continuación, se presentan algunos de mis trabajos más destacados.";
 //: tituloContacto
-const tituloContacto = "Hablemos";
+// const tituloContacto = "Hablemos";
 //: subtituloDeContacto
-const subtituloDeContacto = "Si tienes alguna pregunta o quieres saber más sobre mi trabajo, no dudes en ponerte en contacto conmigo.";
+// const subtituloDeContacto = "Si tienes alguna pregunta o quieres saber más sobre mi trabajo, no dudes en ponerte en contacto conmigo.";
 //: direccionPostal
-const direccionPostal = ["Calle de la Rosa, 12, 2A", "08001 Barcelona", "España"];
+// const direccionPostal = ["Calle de la Rosa, 12, 2A", "08001 Barcelona", "España"];
 //: direccionesDeEmail
-const direccionesDeEmail = ["montse@simon.com", "montse@urjc.es"];
+// const direccionesDeEmail = ["montse@simon.com", "montse@urjc.es"];
 //: numerosDeTelefono
-const numerosDeTelefono = ["123 456 789", "987 654 321"];
+// const numerosDeTelefono = ["123 456 789", "987 654 321"];
 
-const Home = () => {
-  return (
+export default async function Home() {
+  const portadaData = await getPortadaData();
+
+  const { 
+    categoriasCollection,
+    productsCollection,
+    testimoniosCollection,
+    portada,
+    carrera,
+  } = portadaData;
+
+  const {
+    listaAnimadaFrontal,
+    tituloPrincipal,
+    tituloBio,
+    tituloTrabajos,
+    tituloContacto,
+    videoPortada,
+    imagenPortada,
+    imagenBio,
+    cv,
+    bio,
+    subtituloBio,
+    subtituloDeContacto,
+    subtituloDeTrabajos,
+    detallesBioCollection,
+    direccionPostal,
+    direccionesDeEmail,
+    numerosDeTelefono,
+  } = portada;
+
+  const {
+    educacionCollection,
+    experienciaCollection,
+    habilidadesCollection,
+  } = carrera;
+
+  const detallesBio = detallesBioCollection
+    .items
+    .map(({etiqueta, dato}) => Object.assign({}, {label: etiqueta, value: dato}));
+
+  const categoryNames = ["Todo"].concat(categoriasCollection.items.map((item) => item.nombre));
+  console.log(categoryNames);
+  const trabajos = productsCollection.items.map((item) => Object.assign(
+    {},
+    {
+      categories: item.categoriasCollection.items.map((categoria) => categoria.nombre),
+      title: item.titulo,
+      subTitle: item.subtitulo,
+      img: item.imagenPrincipal.url,
+      alterText: item.titulo,
+      portfolioLink: "/" // TODO: Add link to portfolio item
+    }));
+
+  const testimonios = testimoniosCollection.items.map((item) => Object.assign(
+    {}, 
+    {
+      imageUrl: item.imagen.url,
+      desc: item.contenido,
+      reviewerName: item.nombre,
+      rating: item.evaluacion,
+    }))
+
+    return (
     <div className="home-dark">
       <Header />
       {/* End Header Section */}
-      <Slider />
+      <Slider
+        listaAnimadaFrontal={(listaAnimadaFrontal ?? []).map((value) => value.toLowerCase())}
+        tituloPrincipal="Montse Simón"
+        videoPortada={videoPortada.url}
+        imagenPortada={imagenPortada.url} 
+      />
       {/* End Banner Section */}
 
       {/* About Me */}
@@ -43,38 +111,26 @@ const Home = () => {
         className="section about-section after-left-section scrollSpysection"
       >
         <div className="container">
-          <About />
+          <About
+            imagenBio={imagenBio.url}
+            tituloBio={tituloBio}
+            subtituloBio={subtituloBio?.json?.content[0]?.content ?? []}
+            bio={bio.json}
+            detallesBio={detallesBio}
+            cv={cv.url}
+          />
         </div>
       </section>
       {/* End About Me */}
 
-      {/* Services */}
-      {/* 
-      <section
-        id="services"
-        className="section services-section gray-bg scrollSpysection"
-      >
-        <div className="container">
-          <div className="row justify-content-center section-title text-center">
-            <div className="col-lg-7">
-              <h3 className="font-alt">My Services</h3>
-              <p>
-                I design and develop services for customers of all sizes,
-                specializing in creating stylish, modern websites, web services
-                and online stores.
-              </p>
-            </div>
-          </div>
-          <Service />
-        </div>
-      </section> 
-      */}
-      {/* End Services */}
-
       {/*  Skills */}
       <section className="section skill-section">
         <div className="container">
-          <Skills />
+          <Skills 
+            educacion={educacionCollection.items ?? []} 
+            experiencia={experienciaCollection.items ?? []} 
+            habilidades={habilidadesCollection.items ?? []} 
+          />
         </div>
       </section>
       {/* End Skills */}
@@ -84,43 +140,26 @@ const Home = () => {
           <div className="row justify-content-center section-title text-center">
             <div className="col-lg-7">
               <h3 className="font-alt">{tituloTrabajos ?? "Trabajos"}</h3>
-              <p>
-                {subtituloDeTrabajos}
-              </p>
+              {subtituloDeTrabajos && <p>{subtituloDeTrabajos}</p>}
             </div>
           </div>
           {/* End .row */}
-          <Portfolio />
+          {((categoriasCollection?.items?.length ?? 0) > 0 && (productsCollection?.items.length ?? 0) > 0) && <Portfolio
+            tabList={categoryNames}
+            portfolioContent={trabajos}
+          />}
         </div>
       </section>
       {/* End Portfolio */}
 
       <div className="section testimonial">
         <div className="container">
-          <Testimonial />
+          {(testimoniosCollection?.items?.length ?? 0) > 0 && <Testimonial
+            testimonios={testimonios}
+          />}
         </div>
       </div>
       {/* End testimonial */}
-
-      {/* Blog */}
-      {/* 
-      <section id="blog" className="section gray-bg scrollSpysection">
-        <div className="container">
-          <div className="row justify-content-center section-title text-center">
-            <div className="col-lg-7">
-              <h3 className="font-alt">Recent articles</h3>
-              <p>
-                I design and develop services for customers of all sizes,
-                specializing in creating stylish, modern websites, web services
-                and online stores.
-              </p>
-            </div>
-          </div>
-          <Blog />
-        </div>
-      </section> 
-      */}
-      {/*  End Blog */}
 
       {/* Contact */}
       <section
@@ -132,7 +171,7 @@ const Home = () => {
             <div className="col-lg-6 my-3">
               <div className="contct-form">
                 <div className="sm-title">
-                  {/* <h4 className="font-alt">Contacto</h4> */}
+                  <h4 className="font-alt">Contacto</h4>
                 </div>
                 {/* End .sm-title */}
                 <Contact />
@@ -144,16 +183,14 @@ const Home = () => {
               <div className="contact-info">
                 <div className="sm-title">
                   <h4 className="font-alt">{tituloContacto ?? "Hablemos"}</h4>
-                  <p>
-                    {subtituloDeContacto ?? " "}
-                  </p>
+                  {subtituloDeContacto && <p>{subtituloDeContacto}</p>}
                 </div>
                 <div className="media">
                   <div className="icon">
                     <i className="ti-map"></i>
                   </div>
                   <span className="media-body">
-                  {direccionPostal.map((direccion, index) => (
+                  {direccionPostal && direccionPostal.map((direccion, index) => direccion && (
                     <Fragment key={index}>
                       {direccion}
                       {index !== direccionPostal.length - 1 && <br />}
@@ -168,7 +205,7 @@ const Home = () => {
                     <i className="ti-email"></i>
                   </div>
                   <span className="media-body">
-                  {direccionesDeEmail.map((email, index) => (
+                  {direccionesDeEmail && direccionesDeEmail.map((email, index) => email && (
                     <Fragment key={index}>
                       {email}
                       {index !== direccionesDeEmail.length - 1 && <br />}
@@ -183,12 +220,12 @@ const Home = () => {
                     <i className="ti-mobile"></i>
                   </div>
                   <span className="media-body">
-                  {numerosDeTelefono.map((telefono, index) => (
+                  {numerosDeTelefono && numerosDeTelefono.map((telefono, index) => telefono && (
                     <Fragment key={index}>
                       {telefono}
                       {index !== numerosDeTelefono.length - 1 && <br />}
                     </Fragment>
-                  ))}                    
+                  ))}
                   </span>
                 </div>
                 {/* End media */}
@@ -210,6 +247,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;
-

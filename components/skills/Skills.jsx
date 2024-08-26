@@ -1,66 +1,67 @@
 "use client";
 
 //: educacion
-const educacion = [
-  {
-    tiempo: "2010-2012",
-    titulo: "Front-end Engineer",
-    detalle: "International Design Institute",
-  },
-  {
-    tiempo: "2010-2012",
-    titulo: "Graphic Designer",
-    detalle: "Rio Design Institute",
-  },
-  {
-    tiempo: "2010-2012",
-    titulo: "Visual Designer",
-    detalle: "Jakarta Design Institute",
-  },
-];
+// const educacion = [
+//   {
+//     tiempo: "2010-2012",
+//     titulo: "Front-end Engineer",
+//     detalle: "International Design Institute",
+//   },
+//   {
+//     tiempo: "2010-2012",
+//     titulo: "Graphic Designer",
+//     detalle: "Rio Design Institute",
+//   },
+//   {
+//     tiempo: "2010-2012",
+//     titulo: "Visual Designer",
+//     detalle: "Jakarta Design Institute",
+//   },
+// ];
 //: experiencia
-const experiencia = [
-  {
-    tiempo: "2010-2012",
-    titulo: "Software Engineer",
-    detalle: "Furious Design Institute",
-  },
-  {
-    tiempo: "2010-2012",
-    titulo: "Android Developer",
-    detalle: "Ketlimte Design Ltd.",
-  },
-  {
-    tiempo: "2010-2012",
-    titulo: "Rubby Developer",
-    detalle: "Randara Institute Academy",
-  },
-];
+// const experiencia = [
+//   {
+//     tiempo: "2010-2012",
+//     titulo: "Software Engineer",
+//     detalle: "Furious Design Institute",
+//   },
+//   {
+//     tiempo: "2010-2012",
+//     titulo: "Android Developer",
+//     detalle: "Ketlimte Design Ltd.",
+//   },
+//   {
+//     tiempo: "2010-2012",
+//     titulo: "Rubby Developer",
+//     detalle: "Randara Institute Academy",
+//   },
+// ];
 //: habilidades
-const habilidades = [
-  {
-    habilidad: "Teatro Físico",
-    capacidad: 100,
-  },
-  {
-    habilidad: "Teatro de Texto",
-    capacidad: 98,
-  },
-  {
-    habilidad: "Danza",
-    capacidad: 95,
-  },
-  {
-    habilidad: "Dirección Dramática",
-    capacidad: 88,
-  },
-  {
-    habilidad: "Escritura Dramática",
-    capacidad: 70,
-  },
-];
+// const habilidades = [
+//   {
+//     habilidad: "Teatro Físico",
+//     capacidad: 100,
+//   },
+//   {
+//     habilidad: "Teatro de Texto",
+//     capacidad: 98,
+//   },
+//   {
+//     habilidad: "Danza",
+//     capacidad: 95,
+//   },
+//   {
+//     habilidad: "Dirección Dramática",
+//     capacidad: 88,
+//   },
+//   {
+//     habilidad: "Escritura Dramática",
+//     capacidad: 70,
+//   },
+// ];
 
-const Skills = () => {
+const Skills = ({educacion = [], experiencia = [], habilidades = []}) => {
+  console.log("Rendering Skills Component");
   return (
     <>
       <div className="row">

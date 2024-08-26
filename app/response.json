@@ -1,0 +1,670 @@
+{
+    "testimoniosCollection": {
+        "items": [
+            {
+                "orden": 3,
+                "nombre": "Laura Pérez (Dramaturga)",
+                "contenido": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, sem in dictum auctor, diam tortor viverra purus, a interdum orci lacus cursus risus. Praesent ut nulla mattis, sodales metus eget, venenatis nisi. Aenean suscipit nisi volutpat, feugiat ipsum at, congue sem. Nunc cursus tristique diam, non pellentesque ex feugiat ut. Suspendisse potenti. Proin eget scelerisque ligula. Morbi sed ipsum ut mauris tincidunt ullamcorper. Pellentesque sit amet blandit odio. Nunc nec felis quis enim aliquet blandit non eu augue. Praesent felis quam, pretium nec urna ut, venenatis vehicula ante. Nunc eu nibh ut enim interdum imperdiet. Cras et aliquet est. Morbi egestas nibh sed enim malesuada hendrerit. Mauris sit amet varius orci. Mauris convallis dolor non diam vulputate, eu mollis metus ornare.\n\nCras eu tellus facilisis, bibendum justo vel, iaculis neque. Sed sodales mattis sapien in vulputate. Nullam molestie convallis tellus eget luctus. Maecenas orci metus, ultricies nec finibus vitae, consequat quis nisi. Curabitur sed gravida odio. Curabitur tortor mi, faucibus sit amet leo non, accumsan pretium eros. Aenean dapibus nec nisl nec commodo. Nunc aliquam maximus ex vel luctus. Fusce at gravida turpis, at tristique libero.",
+                "evaluacion": 5,
+                "imagen": {
+                    "url": "https://images.ctfassets.net/zpukhu74d9vm/bv1COVuogHsSMn6P8pFxY/512aac617a1a87602eed127e54bf593b/photo-1621425724032-8731c73d49ac.webp"
+                }
+            },
+            {
+                "orden": 2,
+                "nombre": "Miguel Laguna (Periodista revista Cartelera)",
+                "contenido": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, sem in dictum auctor, diam tortor viverra purus, a interdum orci lacus cursus risus. Praesent ut nulla mattis, sodales metus eget, venenatis nisi. Aenean suscipit nisi volutpat, feugiat ipsum at, congue sem. Nunc cursus tristique diam, non pellentesque ex feugiat ut. Suspendisse potenti. Proin eget scelerisque ligula. Morbi sed ipsum ut mauris tincidunt ullamcorper. Pellentesque sit amet blandit odio. Nunc nec felis quis enim aliquet blandit non eu augue. Praesent felis quam, pretium nec urna ut, venenatis vehicula ante. Nunc eu nibh ut enim interdum imperdiet. Cras et aliquet est. Morbi egestas nibh sed enim malesuada hendrerit. Mauris sit amet varius orci. Mauris convallis dolor non diam vulputate, eu mollis metus ornare.\n\nCras eu tellus facilisis, bibendum justo vel, iaculis neque. Sed sodales mattis sapien in vulputate. Nullam molestie convallis tellus eget luctus. Maecenas orci metus, ultricies nec finibus vitae, consequat quis nisi. Curabitur sed gravida odio. Curabitur tortor mi, faucibus sit amet leo non, accumsan pretium eros. Aenean dapibus nec nisl nec commodo. Nunc aliquam maximus ex vel luctus. Fusce at gravida turpis, at tristique libero.",
+                "evaluacion": 5,
+                "imagen": {
+                    "url": "https://images.ctfassets.net/zpukhu74d9vm/6g1vg39qO7QlEVC3xjvQch/5b427c2685b9851a212249fd96a844d0/photo-1618007032127-658530e41bb3.webp"
+                }
+            },
+            {
+                "orden": 1,
+                "nombre": "Marcel Fernández (Director Teatro Enebro)",
+                "contenido": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, sem in dictum auctor, diam tortor viverra purus, a interdum orci lacus cursus risus. Praesent ut nulla mattis, sodales metus eget, venenatis nisi. Aenean suscipit nisi volutpat, feugiat ipsum at, congue sem. Nunc cursus tristique diam, non pellentesque ex feugiat ut. Suspendisse potenti. Proin eget scelerisque ligula. Morbi sed ipsum ut mauris tincidunt ullamcorper. Pellentesque sit amet blandit odio. Nunc nec felis quis enim aliquet blandit non eu augue. Praesent felis quam, pretium nec urna ut, venenatis vehicula ante. Nunc eu nibh ut enim interdum imperdiet. Cras et aliquet est. Morbi egestas nibh sed enim malesuada hendrerit. Mauris sit amet varius orci. Mauris convallis dolor non diam vulputate, eu mollis metus ornare.\n\nCras eu tellus facilisis, bibendum justo vel, iaculis neque. Sed sodales mattis sapien in vulputate. Nullam molestie convallis tellus eget luctus. Maecenas orci metus, ultricies nec finibus vitae, consequat quis nisi. Curabitur sed gravida odio. Curabitur tortor mi, faucibus sit amet leo non, accumsan pretium eros. Aenean dapibus nec nisl nec commodo. Nunc aliquam maximus ex vel luctus. Fusce at gravida turpis, at tristique libero.",
+                "evaluacion": 4,
+                "imagen": {
+                    "url": "https://images.ctfassets.net/zpukhu74d9vm/3KVDy6Ro5dKYsQMsCG5A8l/55c6643cb4a9471f50f929f5be474b0c/photo-1579550300627-bac381ffcb0c.webp"
+                }
+            }
+        ]
+    },
+    "portada": {
+        "subtituloBio": {
+            "json": {
+                "data": {},
+                "content": [
+                    {
+                        "data": {},
+                        "content": [
+                            {
+                                "data": {},
+                                "marks": [],
+                                "value": "Profesional de las ",
+                                "nodeType": "text"
+                            },
+                            {
+                                "data": {},
+                                "marks": [
+                                    {
+                                        "type": "bold"
+                                    }
+                                ],
+                                "value": "Artes Escénicas",
+                                "nodeType": "text"
+                            },
+                            {
+                                "data": {},
+                                "marks": [],
+                                "value": " en ",
+                                "nodeType": "text"
+                            },
+                            {
+                                "data": {},
+                                "marks": [
+                                    {
+                                        "type": "bold"
+                                    }
+                                ],
+                                "value": "España",
+                                "nodeType": "text"
+                            }
+                        ],
+                        "nodeType": "paragraph"
+                    }
+                ],
+                "nodeType": "document"
+            }
+        },
+        "bio": {
+            "json": {
+                "data": {},
+                "content": [
+                    {
+                        "data": {},
+                        "content": [
+                            {
+                                "data": {},
+                                "marks": [],
+                                "value": "Soy una persona creativa, apasionada por el diseño y la ilustración. Me encanta crear cosas bonitas y funcionales. Me considero una persona proactiva, con capacidad de trabajo en equipo y con muchas ganas de aprender y mejorar.",
+                                "nodeType": "text"
+                            }
+                        ],
+                        "nodeType": "paragraph"
+                    }
+                ],
+                "nodeType": "document"
+            }
+        },
+        "tituloPrincipal": "Portada",
+        "listaAnimadaFrontal": [
+            "Actríz",
+            "Bailarina",
+            "Directora",
+            "Dramaturga",
+            "Investigadora"
+        ],
+        "tituloBio": "Montse Simón Navarro",
+        "tituloTrabajos": "Dossier de Trabajos",
+        "subtituloDeTrabajos": "Además de ser actríz y bailarina, he trabajado como directora y dramaturga en diferentes proyectos. A continuación, se presentan algunos de mis trabajos más destacados.",
+        "tituloContacto": "Hablemos",
+        "subtituloDeContacto": "Si tienes alguna pregunta o quieres saber más sobre mi trabajo, no dudes en ponerte en contacto conmigo.",
+        "direccionPostal": [
+            "Calle de la Verdad 12 3A",
+            "28005 Madrid",
+            "España"
+        ],
+        "direccionesDeEmail": [
+            "montse@gmail.com",
+            "montse@urjc.es"
+        ],
+        "numerosDeTelefono": [
+            "123 456 789",
+            "987 654 321"
+        ],
+        "facebook": "https://www.facebook.com/",
+        "instagram": "https://www.instagram.com/",
+        "linkedin": "https://www.linkedin.com/",
+        "youtube": "https://www.youtube.com/",
+        "videoPortada": {
+            "url": "https://videos.ctfassets.net/zpukhu74d9vm/2nWnJNYlPeYy9jElT3Tnde/ff94820e47064437b1baea0d6d4b83f5/VideoPortada.mov"
+        },
+        "imagenPortada": {
+            "url": "https://images.ctfassets.net/zpukhu74d9vm/7iVQju5nIeg7sCYH7GHYV7/acbf65ef872630b40d50b6502053e4d2/MS_Portada.jpg"
+        },
+        "cv": {
+            "url": "https://assets.ctfassets.net/zpukhu74d9vm/5fLFUruBjFIxGfUbuqA2yh/7f702b9b30398d8c5d8005e07f45a11e/CV_MONTSE_SIMOi_N_2024.pdf"
+        },
+        "imagenBio": {
+            "url": "https://images.ctfassets.net/zpukhu74d9vm/6kDWPZWy6cPm8qbCiVbc57/c230e3f9e46a32f323adebe2a19b59ac/MS_Bio.jpg"
+        },
+        "detallesBioCollection": {
+            "items": [
+                {
+                    "etiqueta": "Freelance",
+                    "dato": "Disponible"
+                },
+                {
+                    "etiqueta": "Teléfono",
+                    "dato": "123 456 789"
+                },
+                {
+                    "etiqueta": "Ciudad",
+                    "dato": "Madrid/Barcelona"
+                },
+                {
+                    "etiqueta": "Email",
+                    "dato": "montse@gmail.com"
+                }
+            ]
+        }
+    },
+    "carrera": {
+        "educacionCollection": {
+            "items": [
+                {
+                    "tiempo": "2010–2012",
+                    "titulo": "Grado en Artes Visuales y Danza",
+                    "detalle": "Universidad Rey Juan Carlos"
+                },
+                {
+                    "tiempo": "2010–2012",
+                    "titulo": "Master en Creación Teatral",
+                    "detalle": "Universidad Carlos III"
+                },
+                {
+                    "tiempo": "2023–…",
+                    "titulo": "Estudios de Doctorado",
+                    "detalle": "Universidad Complutense de Madrid"
+                }
+            ]
+        },
+        "experienciaCollection": {
+            "items": [
+                {
+                    "tiempo": "2024",
+                    "titulo": "Elecciones y Divorcios",
+                    "detalle": "Corral de Cervantes"
+                },
+                {
+                    "tiempo": "2023",
+                    "titulo": "Amor, Honor y Poder",
+                    "detalle": "Compañía de Teatro TráTrá"
+                },
+                {
+                    "tiempo": "2023",
+                    "titulo": "Dirección e Interpretación",
+                    "detalle": " Fishers (Agenda 2030) URJC"
+                }
+            ]
+        },
+        "habilidadesCollection": {
+            "items": [
+                {
+                    "habilidad": "Teatro Físico",
+                    "capacidad": 100
+                },
+                {
+                    "habilidad": "Teatro de Texto",
+                    "capacidad": 95
+                },
+                {
+                    "habilidad": "Danza y Movimiento",
+                    "capacidad": 90
+                },
+                {
+                    "habilidad": "Canto",
+                    "capacidad": 80
+                },
+                {
+                    "habilidad": "Dirección Escénica",
+                    "capacidad": 80
+                }
+            ]
+        }
+    },
+    "categoriasCollection": {
+        "items": [
+            {
+                "nombre": "Otros"
+            },
+            {
+                "nombre": "Dirección"
+            },
+            {
+                "nombre": "Videoclip"
+            },
+            {
+                "nombre": "Documental"
+            },
+            {
+                "nombre": "Cortometraje"
+            },
+            {
+                "nombre": "Largometraje"
+            },
+            {
+                "nombre": "Microteatro"
+            },
+            {
+                "nombre": "Teatro"
+            }
+        ]
+    },
+    "productsCollection": {
+        "items": [
+            {
+                "titulo": "Twisters",
+                "subtitulo": "Performer para Warner Bros",
+                "categoriasCollection": {
+                    "items": [
+                        {
+                            "nombre": "Otros"
+                        }
+                    ]
+                },
+                "imagenPrincipal": {
+                    "url": "https://images.ctfassets.net/zpukhu74d9vm/1wtNfp113V3S4gPmiqG22N/d6ebac101879cc067ce1bfba7cc26c3f/MJ_image_01.png"
+                },
+                "descripcion": {
+                    "json": {
+                        "data": {},
+                        "content": [
+                            {
+                                "data": {},
+                                "content": [
+                                    {
+                                        "data": {},
+                                        "marks": [],
+                                        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, sem in dictum auctor, diam tortor viverra purus, a interdum orci lacus cursus risus. Praesent ut nulla mattis, sodales metus eget, venenatis nisi. Aenean suscipit nisi volutpat, feugiat ipsum at, congue sem. Nunc cursus tristique diam, non pellentesque ex feugiat ut. Suspendisse potenti. Proin eget scelerisque ligula. Morbi sed ipsum ut mauris tincidunt ullamcorper. Pellentesque sit amet blandit odio. Nunc nec felis quis enim aliquet blandit non eu augue. Praesent felis quam, pretium nec urna ut, venenatis vehicula ante. Nunc eu nibh ut enim interdum imperdiet. Cras et aliquet est. Morbi egestas nibh sed enim malesuada hendrerit. Mauris sit amet varius orci. Mauris convallis dolor non diam vulputate, eu mollis metus ornare.",
+                                        "nodeType": "text"
+                                    }
+                                ],
+                                "nodeType": "paragraph"
+                            },
+                            {
+                                "data": {},
+                                "content": [
+                                    {
+                                        "data": {},
+                                        "marks": [],
+                                        "value": "Cras eu tellus facilisis, bibendum justo vel, iaculis neque. Sed sodales mattis sapien in vulputate. Nullam molestie convallis tellus eget luctus. Maecenas orci metus, ultricies nec finibus vitae, consequat quis nisi. Curabitur sed gravida odio. Curabitur tortor mi, faucibus sit amet leo non, accumsan pretium eros. Aenean dapibus nec nisl nec commodo. Nunc aliquam maximus ex vel luctus. Fusce at gravida turpis, at tristique libero.",
+                                        "nodeType": "text"
+                                    }
+                                ],
+                                "nodeType": "paragraph"
+                            }
+                        ],
+                        "nodeType": "document"
+                    },
+                    "links": {
+                        "assets": {
+                            "hyperlink": []
+                        }
+                    }
+                }
+            },
+            {
+                "titulo": "Fishers",
+                "subtitulo": "Dirección e Interpretación",
+                "categoriasCollection": {
+                    "items": [
+                        {
+                            "nombre": "Teatro"
+                        },
+                        {
+                            "nombre": "Dirección"
+                        }
+                    ]
+                },
+                "imagenPrincipal": {
+                    "url": "https://images.ctfassets.net/zpukhu74d9vm/7MEHz7gkbB5ZE4wAbpWopw/e757248b6d58b5c596ad0ea408934da4/MJ_image_30.png"
+                },
+                "descripcion": {
+                    "json": {
+                        "nodeType": "document",
+                        "data": {},
+                        "content": [
+                            {
+                                "nodeType": "paragraph",
+                                "data": {},
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, sem in dictum auctor, diam tortor viverra purus, a interdum orci lacus cursus risus. Praesent ut nulla mattis, sodales metus eget, venenatis nisi. Aenean suscipit nisi volutpat, feugiat ipsum at, congue sem. Nunc cursus tristique diam, non pellentesque ex feugiat ut. Suspendisse potenti. Proin eget scelerisque ligula. Morbi sed ipsum ut mauris tincidunt ullamcorper. Pellentesque sit amet blandit odio. Nunc nec felis quis enim aliquet blandit non eu augue. Praesent felis quam, pretium nec urna ut, venenatis vehicula ante. Nunc eu nibh ut enim interdum imperdiet. Cras et aliquet est. Morbi egestas nibh sed enim malesuada hendrerit. Mauris sit amet varius orci. Mauris convallis dolor non diam vulputate, eu mollis metus ornare.",
+                                        "marks": [],
+                                        "data": {}
+                                    }
+                                ]
+                            },
+                            {
+                                "nodeType": "paragraph",
+                                "data": {},
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "Cras eu tellus facilisis, bibendum justo vel, iaculis neque. Sed sodales mattis sapien in vulputate. Nullam molestie convallis tellus eget luctus. Maecenas orci metus, ultricies nec finibus vitae, consequat quis nisi. Curabitur sed gravida odio. Curabitur tortor mi, faucibus sit amet leo non, accumsan pretium eros. Aenean dapibus nec nisl nec commodo. Nunc aliquam maximus ex vel luctus. Fusce at gravida turpis, at tristique libero.",
+                                        "marks": [],
+                                        "data": {}
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "links": {
+                        "assets": {
+                            "hyperlink": []
+                        }
+                    }
+                }
+            },
+            {
+                "titulo": "You're Coming",
+                "subtitulo": "Bailarina",
+                "categoriasCollection": {
+                    "items": [
+                        {
+                            "nombre": "Videoclip"
+                        }
+                    ]
+                },
+                "imagenPrincipal": {
+                    "url": "https://images.ctfassets.net/zpukhu74d9vm/5NR4mSnFfuOIPETbPXAYc2/f6bf9194860e9c202e9b89d8901ae118/MJ_image_06.png"
+                },
+                "descripcion": {
+                    "json": {
+                        "nodeType": "document",
+                        "data": {},
+                        "content": [
+                            {
+                                "nodeType": "paragraph",
+                                "data": {},
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, sem in dictum auctor, diam tortor viverra purus, a interdum orci lacus cursus risus. Praesent ut nulla mattis, sodales metus eget, venenatis nisi. Aenean suscipit nisi volutpat, feugiat ipsum at, congue sem. Nunc cursus tristique diam, non pellentesque ex feugiat ut. Suspendisse potenti. Proin eget scelerisque ligula. Morbi sed ipsum ut mauris tincidunt ullamcorper. Pellentesque sit amet blandit odio. Nunc nec felis quis enim aliquet blandit non eu augue. Praesent felis quam, pretium nec urna ut, venenatis vehicula ante. Nunc eu nibh ut enim interdum imperdiet. Cras et aliquet est. Morbi egestas nibh sed enim malesuada hendrerit. Mauris sit amet varius orci. Mauris convallis dolor non diam vulputate, eu mollis metus ornare.",
+                                        "marks": [],
+                                        "data": {}
+                                    }
+                                ]
+                            },
+                            {
+                                "nodeType": "paragraph",
+                                "data": {},
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "Cras eu tellus facilisis, bibendum justo vel, iaculis neque. Sed sodales mattis sapien in vulputate. Nullam molestie convallis tellus eget luctus. Maecenas orci metus, ultricies nec finibus vitae, consequat quis nisi. Curabitur sed gravida odio. Curabitur tortor mi, faucibus sit amet leo non, accumsan pretium eros. Aenean dapibus nec nisl nec commodo. Nunc aliquam maximus ex vel luctus. Fusce at gravida turpis, at tristique libero.",
+                                        "marks": [],
+                                        "data": {}
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "links": {
+                        "assets": {
+                            "hyperlink": []
+                        }
+                    }
+                }
+            },
+            {
+                "titulo": "Noche Loca",
+                "subtitulo": "Actriz Secundaria (Julieta)",
+                "categoriasCollection": {
+                    "items": [
+                        {
+                            "nombre": "Largometraje"
+                        }
+                    ]
+                },
+                "imagenPrincipal": {
+                    "url": "https://images.ctfassets.net/zpukhu74d9vm/2i95YeDcwZEtuZLNVcOevl/b17a4fa28e818ca396e9ba1365a0f4a4/MJ_image_18.png"
+                },
+                "descripcion": {
+                    "json": {
+                        "nodeType": "document",
+                        "data": {},
+                        "content": [
+                            {
+                                "nodeType": "paragraph",
+                                "data": {},
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, sem in dictum auctor, diam tortor viverra purus, a interdum orci lacus cursus risus. Praesent ut nulla mattis, sodales metus eget, venenatis nisi. Aenean suscipit nisi volutpat, feugiat ipsum at, congue sem. Nunc cursus tristique diam, non pellentesque ex feugiat ut. Suspendisse potenti. Proin eget scelerisque ligula. Morbi sed ipsum ut mauris tincidunt ullamcorper. Pellentesque sit amet blandit odio. Nunc nec felis quis enim aliquet blandit non eu augue. Praesent felis quam, pretium nec urna ut, venenatis vehicula ante. Nunc eu nibh ut enim interdum imperdiet. Cras et aliquet est. Morbi egestas nibh sed enim malesuada hendrerit. Mauris sit amet varius orci. Mauris convallis dolor non diam vulputate, eu mollis metus ornare.",
+                                        "marks": [],
+                                        "data": {}
+                                    }
+                                ]
+                            },
+                            {
+                                "nodeType": "paragraph",
+                                "data": {},
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "Cras eu tellus facilisis, bibendum justo vel, iaculis neque. Sed sodales mattis sapien in vulputate. Nullam molestie convallis tellus eget luctus. Maecenas orci metus, ultricies nec finibus vitae, consequat quis nisi. Curabitur sed gravida odio. Curabitur tortor mi, faucibus sit amet leo non, accumsan pretium eros. Aenean dapibus nec nisl nec commodo. Nunc aliquam maximus ex vel luctus. Fusce at gravida turpis, at tristique libero.",
+                                        "marks": [],
+                                        "data": {}
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "links": {
+                        "assets": {
+                            "hyperlink": []
+                        }
+                    }
+                }
+            },
+            {
+                "titulo": "Overbooking",
+                "subtitulo": "Actriz Principal (Amy Winehouse)",
+                "categoriasCollection": {
+                    "items": [
+                        {
+                            "nombre": "Microteatro"
+                        }
+                    ]
+                },
+                "imagenPrincipal": {
+                    "url": "https://images.ctfassets.net/zpukhu74d9vm/13x2T7aED1SBnxcICNOdSA/7389beb43fe0f8e0ad7d1d127c9c961b/MJ_image_22.png"
+                },
+                "descripcion": {
+                    "json": {
+                        "nodeType": "document",
+                        "data": {},
+                        "content": [
+                            {
+                                "nodeType": "paragraph",
+                                "data": {},
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, sem in dictum auctor, diam tortor viverra purus, a interdum orci lacus cursus risus. Praesent ut nulla mattis, sodales metus eget, venenatis nisi. Aenean suscipit nisi volutpat, feugiat ipsum at, congue sem. Nunc cursus tristique diam, non pellentesque ex feugiat ut. Suspendisse potenti. Proin eget scelerisque ligula. Morbi sed ipsum ut mauris tincidunt ullamcorper. Pellentesque sit amet blandit odio. Nunc nec felis quis enim aliquet blandit non eu augue. Praesent felis quam, pretium nec urna ut, venenatis vehicula ante. Nunc eu nibh ut enim interdum imperdiet. Cras et aliquet est. Morbi egestas nibh sed enim malesuada hendrerit. Mauris sit amet varius orci. Mauris convallis dolor non diam vulputate, eu mollis metus ornare.",
+                                        "marks": [],
+                                        "data": {}
+                                    }
+                                ]
+                            },
+                            {
+                                "nodeType": "paragraph",
+                                "data": {},
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "Cras eu tellus facilisis, bibendum justo vel, iaculis neque. Sed sodales mattis sapien in vulputate. Nullam molestie convallis tellus eget luctus. Maecenas orci metus, ultricies nec finibus vitae, consequat quis nisi. Curabitur sed gravida odio. Curabitur tortor mi, faucibus sit amet leo non, accumsan pretium eros. Aenean dapibus nec nisl nec commodo. Nunc aliquam maximus ex vel luctus. Fusce at gravida turpis, at tristique libero.",
+                                        "marks": [],
+                                        "data": {}
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "links": {
+                        "assets": {
+                            "hyperlink": []
+                        }
+                    }
+                }
+            },
+            {
+                "titulo": "La Casa del Placer",
+                "subtitulo": "Actriz Principal (Juana Inés de la Cruz)",
+                "categoriasCollection": {
+                    "items": [
+                        {
+                            "nombre": "Teatro"
+                        }
+                    ]
+                },
+                "imagenPrincipal": {
+                    "url": "https://images.ctfassets.net/zpukhu74d9vm/6fu60BmV4KPDrNZXdecQGs/7ac81cc06ef498c2fbf717b570b63a5e/MJ_image_23.png"
+                },
+                "descripcion": {
+                    "json": {
+                        "data": {},
+                        "content": [
+                            {
+                                "data": {},
+                                "content": [
+                                    {
+                                        "data": {},
+                                        "marks": [],
+                                        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, sem in dictum auctor, diam tortor viverra purus, a interdum orci lacus cursus risus. Praesent ut nulla mattis, sodales metus eget, venenatis nisi. Aenean suscipit nisi volutpat, feugiat ipsum at, congue sem. Nunc cursus tristique diam, non pellentesque ex feugiat ut. Suspendisse potenti. Proin eget scelerisque ligula. Morbi sed ipsum ut mauris tincidunt ullamcorper. Pellentesque sit amet blandit odio. Nunc nec felis quis enim aliquet blandit non eu augue. Praesent felis quam, pretium nec urna ut, venenatis vehicula ante. Nunc eu nibh ut enim interdum imperdiet. Cras et aliquet est. Morbi egestas nibh sed enim malesuada hendrerit. Mauris sit amet varius orci. Mauris convallis dolor non diam vulputate, eu mollis metus ornare.",
+                                        "nodeType": "text"
+                                    }
+                                ],
+                                "nodeType": "paragraph"
+                            },
+                            {
+                                "data": {},
+                                "content": [
+                                    {
+                                        "data": {},
+                                        "marks": [],
+                                        "value": "Cras eu tellus facilisis, bibendum justo vel, iaculis neque. Sed sodales mattis sapien in vulputate. Nullam molestie convallis tellus eget luctus. Maecenas orci metus, ultricies nec finibus vitae, consequat quis nisi. Curabitur sed gravida odio. Curabitur tortor mi, faucibus sit amet leo non, accumsan pretium eros. Aenean dapibus nec nisl nec commodo. Nunc aliquam maximus ex vel luctus. Fusce at gravida turpis, at tristique libero.",
+                                        "nodeType": "text"
+                                    }
+                                ],
+                                "nodeType": "paragraph"
+                            }
+                        ],
+                        "nodeType": "document"
+                    },
+                    "links": {
+                        "assets": {
+                            "hyperlink": []
+                        }
+                    }
+                }
+            },
+            {
+                "titulo": "Hacia Baal",
+                "subtitulo": "Actriz Principal: Louise",
+                "categoriasCollection": {
+                    "items": [
+                        {
+                            "nombre": "Teatro"
+                        }
+                    ]
+                },
+                "imagenPrincipal": {
+                    "url": "https://images.ctfassets.net/zpukhu74d9vm/1XgEBn2nC07JTb8jT77nC5/7acd1904c51ed9780298c88a5c3a58ec/MJ_image_31.png"
+                },
+                "descripcion": {
+                    "json": {
+                        "nodeType": "document",
+                        "data": {},
+                        "content": [
+                            {
+                                "nodeType": "paragraph",
+                                "data": {},
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, sem in dictum auctor, diam tortor viverra purus, a interdum orci lacus cursus risus. Praesent ut nulla mattis, sodales metus eget, venenatis nisi. Aenean suscipit nisi volutpat, feugiat ipsum at, congue sem. Nunc cursus tristique diam, non pellentesque ex feugiat ut. Suspendisse potenti. Proin eget scelerisque ligula. Morbi sed ipsum ut mauris tincidunt ullamcorper. Pellentesque sit amet blandit odio. Nunc nec felis quis enim aliquet blandit non eu augue. Praesent felis quam, pretium nec urna ut, venenatis vehicula ante. Nunc eu nibh ut enim interdum imperdiet. Cras et aliquet est. Morbi egestas nibh sed enim malesuada hendrerit. Mauris sit amet varius orci. Mauris convallis dolor non diam vulputate, eu mollis metus ornare.",
+                                        "marks": [],
+                                        "data": {}
+                                    }
+                                ]
+                            },
+                            {
+                                "nodeType": "paragraph",
+                                "data": {},
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "Cras eu tellus facilisis, bibendum justo vel, iaculis neque. Sed sodales mattis sapien in vulputate. Nullam molestie convallis tellus eget luctus. Maecenas orci metus, ultricies nec finibus vitae, consequat quis nisi. Curabitur sed gravida odio. Curabitur tortor mi, faucibus sit amet leo non, accumsan pretium eros. Aenean dapibus nec nisl nec commodo. Nunc aliquam maximus ex vel luctus. Fusce at gravida turpis, at tristique libero.",
+                                        "marks": [],
+                                        "data": {}
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "links": {
+                        "assets": {
+                            "hyperlink": []
+                        }
+                    }
+                }
+            },
+            {
+                "titulo": "A27",
+                "subtitulo": "Instituto Cervantes: Actriz Principal",
+                "categoriasCollection": {
+                    "items": [
+                        {
+                            "nombre": "Teatro"
+                        }
+                    ]
+                },
+                "imagenPrincipal": {
+                    "url": "https://images.ctfassets.net/zpukhu74d9vm/4jrlbroI1nkaCUw5WgRKJP/5f425817589f593ee31d3c7e51b7ae58/MJ_image_12.png"
+                },
+                "descripcion": {
+                    "json": {
+                        "nodeType": "document",
+                        "data": {},
+                        "content": [
+                            {
+                                "nodeType": "paragraph",
+                                "data": {},
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, sem in dictum auctor, diam tortor viverra purus, a interdum orci lacus cursus risus. Praesent ut nulla mattis, sodales metus eget, venenatis nisi. Aenean suscipit nisi volutpat, feugiat ipsum at, congue sem. Nunc cursus tristique diam, non pellentesque ex feugiat ut. Suspendisse potenti. Proin eget scelerisque ligula. Morbi sed ipsum ut mauris tincidunt ullamcorper. Pellentesque sit amet blandit odio. Nunc nec felis quis enim aliquet blandit non eu augue. Praesent felis quam, pretium nec urna ut, venenatis vehicula ante. Nunc eu nibh ut enim interdum imperdiet. Cras et aliquet est. Morbi egestas nibh sed enim malesuada hendrerit. Mauris sit amet varius orci. Mauris convallis dolor non diam vulputate, eu mollis metus ornare.",
+                                        "marks": [],
+                                        "data": {}
+                                    }
+                                ]
+                            },
+                            {
+                                "nodeType": "paragraph",
+                                "data": {},
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "Cras eu tellus facilisis, bibendum justo vel, iaculis neque. Sed sodales mattis sapien in vulputate. Nullam molestie convallis tellus eget luctus. Maecenas orci metus, ultricies nec finibus vitae, consequat quis nisi. Curabitur sed gravida odio. Curabitur tortor mi, faucibus sit amet leo non, accumsan pretium eros. Aenean dapibus nec nisl nec commodo. Nunc aliquam maximus ex vel luctus. Fusce at gravida turpis, at tristique libero.",
+                                        "marks": [],
+                                        "data": {}
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "links": {
+                        "assets": {
+                            "hyperlink": []
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

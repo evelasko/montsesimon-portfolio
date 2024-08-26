@@ -13,6 +13,7 @@ const SocialShare = [
 ];
 
 const Social = () => {
+  console.log("Rendering Social Component");
   return (
     <div className="nav social-icons justify-content-center text-sm-center justify-content-md-end">
       {SocialShare.map((val, i) => (
