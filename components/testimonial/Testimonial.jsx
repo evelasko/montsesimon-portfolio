@@ -31,7 +31,6 @@ import Slider from "react-slick";
   // ];
 
 export default function SimpleSlider({testimonios}) {
-  console.log("Rendering Testimonial Component");
   var settings = {
     dots: true,
     arrow: false,
@@ -39,7 +38,7 @@ export default function SimpleSlider({testimonios}) {
     speed: 900,
     slidesToShow: 2,
     slidesToScroll: 2,
-    autoplay: false,
+    autoplay: true,
     margin: 30,
     responsive: [
       {

@@ -61,7 +61,6 @@
 // ];
 
 const Skills = ({educacion = [], experiencia = [], habilidades = []}) => {
-  console.log("Rendering Skills Component");
   return (
     <>
       <div className="row">

@@ -14,7 +14,6 @@ import { useEffect, useState } from "react";
 import Social from "../Social";
 
 const Slider = ({listaAnimadaFrontal, tituloPrincipal, videoPortada, imagenPortada}) => {
-  console.log("Rendering Slider Component");
   const [index, setIndex] = useState(0);
 
   useEffect(() => {

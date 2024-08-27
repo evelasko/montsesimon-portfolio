@@ -72,7 +72,6 @@ export default async function Home() {
     .map(({etiqueta, dato}) => Object.assign({}, {label: etiqueta, value: dato}));
 
   const categoryNames = ["Todo"].concat(categoriasCollection.items.map((item) => item.nombre));
-  console.log(categoryNames);
   const trabajos = productsCollection.items.map((item) => Object.assign(
     {},
     {

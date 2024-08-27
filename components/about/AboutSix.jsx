@@ -34,7 +34,6 @@ const About = ({imagenBio, tituloBio, subtituloBio, bio, detallesBio, cv}) => {
   const halfIndex = Math.ceil(detallesBio.length / 2);
   const detallesBioCol1 = detallesBio.slice(0, halfIndex);
   const detallesBioCol2 = detallesBio.slice(halfIndex);
-  console.log("Rendering About Component")
 
   return (
     <>

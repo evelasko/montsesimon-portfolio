@@ -66,7 +66,6 @@ import { useEffect, useState } from "react";
 // ];
 
 export default function Portfolio ({tabList, portfolioContent}) {
-  console.log("Rendering Portfolio Component");
   const [currentTab, setCurrentTab] = useState(tabList[0]);
   const [filteredItems, setFilteredItems] = useState(portfolioContent);
   useEffect(() => {
@@ -85,7 +84,7 @@ export default function Portfolio ({tabList, portfolioContent}) {
     <div className="positon-relative">
       <div className="portfolio-filter-01">
         <div
-          className="filter d-flex flex-wrap justify-content-start mr-3 "
+          className="filter d-flex flex-wrap justify-content-center mr-3 "
           style={{
             columnGap: "12px",
             cursor: "pointer",
@@ -93,6 +92,7 @@ export default function Portfolio ({tabList, portfolioContent}) {
             margin: "0px auto",
             marginBottom: "20px",
             fontWeight: "600",
+            textAlign: "center",
           }}
         >
           {tabList.map((val, i) => (

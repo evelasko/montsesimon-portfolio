@@ -1,3 +1,5 @@
+import { getSocialData } from "@/lib/api";
+import { get } from "react-hook-form";
 import {
   FaFacebookF,
   FaInstagram,
@@ -16,8 +18,20 @@ const SocialShare = [
   { Social: <FaYoutube />, link: "https://www.youtube.com/" },
 ];
 
-const Footer = () => {
-  console.log("Rendering Footer Component");
+const socialContenfulToElements = {
+  facebook: <FaFacebookF />,
+  instagram: <FaInstagram />,
+  linkedin: <FaLinkedinIn />,
+  youtube: <FaYoutube />,
+};
+
+export default async function Footer() {
+  const socialData = await getSocialData();
+  const SocialShare = Object.entries(socialData).map(([key, value]) => ({
+    Social: socialContenfulToElements[key],
+    link: value,
+  }));
+
   return (
     <>
       <div className="row align-items-center">
@@ -52,5 +66,3 @@ const Footer = () => {
     </>
   );
 };
-
-export default Footer;
